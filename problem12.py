@@ -25,7 +25,7 @@ def factorization(n):
 def tri_factors_over(n):
     i = 1
     tri_num = nth_tri_num(i)
-    while len(factorization(tri_num)) < n:
+    while len(factorization(tri_num)) <= n:
         i += 1
         tri_num = nth_tri_num(i)
     return tri_num
